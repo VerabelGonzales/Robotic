@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+
+<robot name="robot_simple" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link
+    name="Base_Link">
+    <inertial>
+      <origin
+        xyz="0.058168 -0.1152 0.081186"
+        rpy="0 0 0" />
+      <mass
+        value="0.13005" />
+      <inertia
+        ixx="8.5513E-05"
+        ixy="1.6712E-20"
+        ixz="-2.2329E-21"
+        iyy="0.00025307"
+        iyz="4.7311E-21"
+        izz="0.00033602" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Asem2/meshes/Base_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Asem2/meshes/Base_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="RuedaA">
+    <inertial>
+      <origin
+        xyz="0 6.93889390390723E-18 0.0035"
+        rpy="0 0 0" />
+      <mass
+        value="0.00649668071567321" />
+      <inertia
+        ixx="7.45274397295945E-07"
+        ixy="3.97046694025453E-22"
+        ixz="-2.32491936755012E-23"
+        iyy="7.45274397295945E-07"
+        iyz="-1.60888178509894E-23"
+        izz="1.43749256874722E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Asem2/meshes/RuedaA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Asem2/meshes/RuedaA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointA"
+    type="continuous">
+    <origin
+      xyz="0.093168 -0.0652 0.076496"
+      rpy="-1.5708 0.54732 -3.1416" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="RuedaA" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="RuedaB">
+    <inertial>
+      <origin
+        xyz="-1.3878E-17 -2.7756E-17 0.0035"
+        rpy="0 0 0" />
+      <mass
+        value="0.0064967" />
+      <inertia
+        ixx="7.4527E-07"
+        ixy="2.9117E-22"
+        ixz="-2.2443E-23"
+        iyy="7.4527E-07"
+        iyz="1.5668E-24"
+        izz="1.4375E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Asem2/meshes/RuedaB.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Asem2/meshes/RuedaB.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointB"
+    type="continuous">
+    <origin
+      xyz="0.093168 -0.1582 0.076496"
+      rpy="-1.5708 -1.2701 3.1416" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="RuedaB" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="RuedaC">
+    <inertial>
+      <origin
+        xyz="0 -2.08166817117217E-17 0.0035"
+        rpy="0 0 0" />
+      <mass
+        value="0.0064966807156732" />
+      <inertia
+        ixx="7.45274397295943E-07"
+        ixy="-1.05879118406788E-22"
+        ixz="-1.63103937666228E-23"
+        iyy="7.45274397295943E-07"
+        iyz="-1.68413641076558E-23"
+        izz="1.43749256874722E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Asem2/meshes/RuedaC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Asem2/meshes/RuedaC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointC"
+    type="continuous">
+    <origin
+      xyz="0.023168 -0.0652 0.076496"
+      rpy="-1.5708 0.64871 -3.1416" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="RuedaC" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="RuedaD">
+    <inertial>
+      <origin
+        xyz="0 -1.73472347597681E-17 0.0035"
+        rpy="0 0 0" />
+      <mass
+        value="0.00649668071567321" />
+      <inertia
+        ixx="7.45274397295945E-07"
+        ixy="1.58818677610181E-22"
+        ixz="-1.18778874422057E-23"
+        iyy="7.45274397295945E-07"
+        iyz="-9.7275043034342E-24"
+        izz="1.43749256874723E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Asem2/meshes/RuedaD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Asem2/meshes/RuedaD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointD"
+    type="continuous">
+    <origin
+      xyz="0.023168 -0.1582 0.076496"
+      rpy="1.5708 -1.1327 0" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="RuedaD" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+
+        <gazebo>
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+        <legacyMode>false</legacyMode>
+        <alwaysOn>true</alwaysOn>
+        <publishWheelTF>true</publishWheelTF>
+        <publishTf>1</publishTf>
+        <publishWheelJointState>true</publishWheelJointState>
+        <updateRate>100.0</updateRate>
+        <leftJoint>RuedaA</leftJoint>
+        <rightJoint>RuedaB</rightJoint>
+        <wheelSeparation>0.1</wheelSeparation>
+        <wheelDiameter>0.04</wheelDiameter>
+        <wheelAcceleration>0.05</wheelAcceleration>
+        <torque>0.1</torque>
+        <commandTopic>/part2_cmr/cmd_vel</commandTopic>
+        <odometryTopic>odom</odometryTopic>
+        <odometryFrame>odom</odometryFrame>
+        <robotBaseFrame>base_link</robotBaseFrame>
+    </plugin>
+</gazebo>
+</robot>
